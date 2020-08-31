@@ -1,0 +1,29 @@
+{
+  "name": "encryption",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "web3Wallet": {
+    "bundle": {
+      "local": "dist/bundle.js",
+      "url": "http://localhost:8081/dist/bundle.js"
+    },
+    "initialPermissions": {
+      "metamask_getPluginState": {},
+      "metamask_getTxById": {},
+      "metamask_tx:status-update": {},
+      "metamask_updatePluginState": {}
+    }
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "eth-ecies": "^1.0.5",
+    "ethereumjs-util": "^7.0.4",
+    "noble-bls12-381": "^0.4.3"
+  }
+}
